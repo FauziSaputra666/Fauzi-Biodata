@@ -1,17 +1,19 @@
 import React from "react";
 import Header from "../../components/homepage/header";
-import Sidebar from "../../components/navigation/sidebar";
+import About from "../../components/homepage/about";
+import Skill from "../../components/homepage/skill";
+import Footer from "../../components/homepage/footer";
+import Contact from "../../components/homepage/contact";
+import ScrollToTop from "../../components/goTop/scrolltotop";
 const Home = () => {
   return (
     <>
-      <div className="d-flex">
-        <div className="col-auto">
-          <Sidebar />
-        </div>
-        <div>
-          <Header />
-        </div>
-      </div>
+    <ScrollToTop />
+      <Header />
+      <About />
+      <Skill /> 
+      <Contact />
+      <Footer />
     </>
   );
 };
